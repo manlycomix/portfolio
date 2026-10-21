@@ -34,11 +34,12 @@ img {
 .project {
   display: flex;
   gap: 40px;
-  align-items: center;
+  align-items: flex-start;;
 }
 
 .project img {
   width: 50%;
+  max-width: 400px;
   height: auto;
 }
 
