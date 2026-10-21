@@ -30,3 +30,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.project {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+}
+
+.project-description {
+  flex: 1;
+}
