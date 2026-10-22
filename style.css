@@ -59,15 +59,34 @@ img {
   height: auto;
 }
 
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.project-featured {
+  flex: 0 0 100%;
+}
+
 .project-featured img {
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  max-width: 880px;
+}
+
+.project-small {
+  flex: 1 1 320px;
 }
 
 .project-small img {
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
+  width: 100%;
 }
+
+.project-text {
+  margin-top: 16px;
+}
+
 
 .project-text {
   margin-top: 12px;
