@@ -97,3 +97,26 @@ body {
   height: 300px;
   object-fit: contain;
 }
+
+.intro {
+  margin-bottom: 100px;
+}
+
+.intro-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.intro h1 {
+  font-size: 56px;
+  line-height: 1.1;
+  max-width: 850px;
+  margin-bottom: 32px;
+}
+
+.intro-description {
+  font-size: 22px;
+  line-height: 1.4;
+  max-width: 650px;
+}
