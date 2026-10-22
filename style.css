@@ -71,3 +71,18 @@ img {
   font-size: 16px;
   color: #666666;
 }
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-featured img {
+  height: 420px;
+  object-fit: contain;
+}
+
+.project-small img {
+  height: 300px;
+  object-fit: contain;
+}
