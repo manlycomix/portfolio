@@ -1,128 +1,42 @@
-body {
-  background-color: #ffffff;
-  color: #222222;
-  font-family: Arial, sans-serif;
-  padding: 40px;
-  margin: 0;
-}
 
-h1 {
-  font-size: 56px;
-  margin: 0 0 60px 0;
-}
+/* ОБЩИЕ НАСТРОЙКИ */
 
-h2 {
-  font-size: 28px;
-  margin: 0 0 24px 0;
-}
-
-h3 {
-  font-size: 24px;
-  margin: 0 0 8px 0;
-}
-
-p {
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 0 12px 0;
-}
-
-section {
-  margin-bottom: 80px;
-}
-
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 16px;
-  row-gap: 48px;
-}
-
-
-
-
-.project {
-  background-color: transparent;
-  padding: 0;
+* {
   box-sizing: border-box;
-}
-
-
-.project img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-
-.project img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-.project-featured {
-  flex: 0 0 100%;
-}
-
-
-.project-featured img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-
-.project-small {
-  flex: 1 1 320px;
-}
-
-.project-small img {
-  width: 100%;
-}
-
-.project-text {
-  margin-top: 16px;
-}
-
-
-.project-text {
-  margin-top: 12px;
-}
-
-
-.project-text {
-  margin-top: 16px;
-}
-
-.project-category {
-  font-size: 16px;
-  color: #666666;
 }
 
 body {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Arial, sans-serif;
 }
 
-.project-featured img {
-  height: 420px;
-  object-fit: contain;
+/* ТИПОГРАФИКА */
+
+h1, h2, h3, p {
+  margin-top: 0;
 }
 
-.project-small img {
-  height: 300px;
-  object-fit: contain;
+h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
+
+h3 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ПЕРВЫЙ ЭКРАН */
 
 .intro {
   margin-bottom: 100px;
@@ -145,4 +59,117 @@ body {
   font-size: 22px;
   line-height: 1.4;
   max-width: 650px;
+  margin-bottom: 0;
+}
+
+/* СЕТКА ПРОЕКТОВ */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 64px;
+}
+
+.project {
+  min-width: 0;
+}
+
+/* SKYENG — ГЛАВНЫЙ ПРОЕКТ */
+
+.project-featured {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.project-featured img {
+  display: block;
+  width: 60%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.project-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-text h3 {
+  margin: 0 0 12px;
+}
+
+.project-text p {
+  margin: 0;
+}
+
+/* СТИКЕРЫ И КОМИКСЫ */
+
+.project-small {
+  flex: 1 1 320px;
+}
+
+.project-small img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.project-small h3 {
+  margin: 16px 0 0;
+}
+
+/* АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
+
+@media (max-width: 700px) {
+
+  body {
+    padding: 24px;
+  }
+
+  .intro {
+    margin-bottom: 64px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro-description {
+    font-size: 18px;
+  }
+
+  .projects {
+    row-gap: 40px;
+  }
+
+  .project-featured {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-featured img {
+    width: 100%;
+  }
+
+  .project-small {
+    flex-basis: 100%;
+  }
+
+  .project-small img {
+    height: auto;
+    max-height: 350px;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
 }
