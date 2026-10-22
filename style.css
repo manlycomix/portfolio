@@ -37,11 +37,13 @@ img {
   height: auto;
 }
 
+
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
 }
+
 
 
 .project {
@@ -50,13 +52,27 @@ img {
   box-sizing: border-box;
 }
 
-.project-featured {
-  flex: 0 0 100%;
+
+.project img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.project-small {
-  flex: 1 1 320px;
+.project-featured img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
+
+.project-small img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+}
+
+.project-text {
+  margin-top: 12px;
+}
+
 
 .project-text {
   margin-top: 16px;
