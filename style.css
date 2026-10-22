@@ -1,57 +1,73 @@
-
 body {
   background-color: #f4f2ed;
   color: #222222;
   font-family: Arial, sans-serif;
   padding: 40px;
+  margin: 0;
 }
 
 h1 {
-  font-size: 48px;
-  margin-bottom: 60px;
+  font-size: 56px;
+  margin: 0 0 60px 0;
 }
 
 h2 {
   font-size: 28px;
-  margin-bottom: 16px;
+  margin: 0 0 24px 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
+  margin: 0 0 12px 0;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
+
 img {
-  display: block;
-  width: 300px;
-  max-width: 100%;
-  height: auto;
-}
-
-.project {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;;
-}
-
-
-.project-images {
-  width: 50%;
-  max-width: 400px;
-  flex-shrink: 0;
-}
-
-.project-images img {
   display: block;
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
-.project-description {
-  flex: 1;
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-featured {
+  flex: 0 0 100%;
+}
+
+.project-small {
+  flex: 1 1 320px;
+}
+
+.project-text {
+  margin-top: 16px;
+}
+
+.project-number {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.project-category {
+  font-size: 16px;
+  color: #666666;
 }
