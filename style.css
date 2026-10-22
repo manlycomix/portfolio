@@ -178,3 +178,7 @@ p {
     font-size: 22px;
   }
 }
+
+.project-small img {
+  outline: 2px solid red;
+}
