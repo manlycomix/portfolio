@@ -37,11 +37,20 @@ img {
   align-items: flex-start;;
 }
 
-.project img {
+
+.project-images {
   width: 50%;
   max-width: 400px;
-  height: auto;
+  flex-shrink: 0;
 }
+
+.project-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
 
 .project-description {
   flex: 1;
