@@ -1,5 +1,5 @@
 body {
-  background-color: #f4f2ed;
+  background-color: #ffffff;
   color: #222222;
   font-family: Arial, sans-serif;
   padding: 40px;
@@ -43,9 +43,10 @@ img {
   gap: 24px;
 }
 
+
 .project {
-  background-color: #ffffff;
-  padding: 20px;
+  background-color: transparent;
+  padding: 0;
   box-sizing: border-box;
 }
 
