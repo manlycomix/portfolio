@@ -158,12 +158,17 @@ p {
     flex-basis: 100%;
   }
 
-  .project-small img {
-    height: auto;
-    max-height: 350px;
-    object-fit: contain;
-    object-position: left center;
-  }
+
+.project-small img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-small h3 {
+  margin: 12px 0 0;
+}
+
 
   h2 {
     font-size: 24px;
