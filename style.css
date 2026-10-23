@@ -194,3 +194,26 @@ p {
   padding-left: 12px;
 }
 
+@media (max-width: 700px) {
+
+  .projects {
+    row-gap: 72px;
+  }
+
+  .project-small {
+    flex: 0 0 100%;
+  }
+
+  .project-small img {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .project-small h3 {
+    margin-top: 8px;
+    padding-left: 0;
+    font-size: 22px;
+  }
+}
+
