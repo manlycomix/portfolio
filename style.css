@@ -1,5 +1,5 @@
 
-/* ОБЩИЕ НАСТРОЙКИ */
+/* 1. ОБЩИЕ НАСТРОЙКИ */
 
 * {
   box-sizing: border-box;
@@ -14,7 +14,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ТИПОГРАФИКА */
+
+/* 2. ТИПОГРАФИКА */
 
 h1, h2, h3, p {
   margin-top: 0;
@@ -36,7 +37,8 @@ p {
   line-height: 1.5;
 }
 
-/* ПЕРВЫЙ ЭКРАН */
+
+/* 3. ПЕРВЫЙ ЭКРАН */
 
 .intro {
   margin-bottom: 100px;
@@ -62,7 +64,8 @@ p {
   margin-bottom: 0;
 }
 
-/* СЕТКА ПРОЕКТОВ */
+
+/* 4. ОБЩАЯ СЕТКА ПРОЕКТОВ */
 
 .projects {
   display: flex;
@@ -75,7 +78,8 @@ p {
   min-width: 0;
 }
 
-/* SKYENG — ГЛАВНЫЙ ПРОЕКТ */
+
+/* 5. SKYENG — ГЛАВНЫЙ ПРОЕКТ */
 
 .project-featured {
   flex: 0 0 100%;
@@ -104,12 +108,11 @@ p {
   margin: 0;
 }
 
-/* СТИКЕРЫ И КОМИКСЫ */
 
+/* 6. ТРИ НЕБОЛЬШИХ ПРОЕКТА */
 
 .project-small {
   flex: 0 0 calc((100% - 48px) / 3);
-  min-width: 0;
 }
 
 .project-small img {
@@ -122,7 +125,43 @@ p {
   font-size: 22px;
   margin: 12px 0 0;
 }
-/* АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
+
+
+/* 7. ОПТИЧЕСКОЕ ВЫРАВНИВАНИЕ ПОДПИСЕЙ */
+
+.project-casual h3 {
+  padding-left: 16px;
+}
+
+.project-stickers h3 {
+  padding-left: 12px;
+}
+
+.project-comics h3 {
+  padding-left: 12px;
+}
+
+
+/* 8. ПЛАНШЕТЫ */
+
+@media (max-width: 900px) {
+
+  .project-featured {
+    gap: 24px;
+  }
+
+  .project-featured img {
+    width: 55%;
+  }
+
+  .project-small {
+    flex: 0 0 calc((100% - 24px) / 2);
+  }
+
+}
+
+
+/* 9. ТЕЛЕФОНЫ */
 
 @media (max-width: 700px) {
 
@@ -142,8 +181,12 @@ p {
     font-size: 18px;
   }
 
+  h2 {
+    font-size: 24px;
+  }
+
   .projects {
-    row-gap: 40px;
+    row-gap: 48px;
   }
 
   .project-featured {
@@ -156,64 +199,18 @@ p {
   }
 
   .project-small {
-    flex-basis: 100%;
-  }
-
-
-.project-small img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.project-small h3 {
-  margin: 12px 0 0;
-}
-
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 22px;
-  }
-}
-
-/* Оптическое выравнивание подписей */
-
-.project-casual h3 {
-  padding-left: 16px;
-}
-
-.project-stickers h3 {
-  padding-left: 12px;
-}
-
-.project-comics h3 {
-  padding-left: 12px;
-}
-
-@media (max-width: 700px) {
-
-  .projects {
-    row-gap: 72px;
-  }
-
-  .project-small {
     flex: 0 0 100%;
   }
 
   .project-small img {
-    width: 100%;
-    height: auto;
-    max-height: none;
+    width: 80%;
+    margin: 0;
   }
 
   .project-small h3 {
+    font-size: 22px;
     margin-top: 8px;
     padding-left: 0;
-    font-size: 22px;
   }
-}
 
+}
