@@ -135,17 +135,15 @@ p {
 
 /* 7. ОПТИЧЕСКОЕ ВЫРАВНИВАНИЕ ПОДПИСЕЙ */
 
-.project-casual h3 {
-  padding-left: 16px;
+
+/* Единое выравнивание подписей */
+
+.project-small h3 {
+  font-size: 22px;
+  margin: 12px 0 0;
+  padding-left: 0;
 }
 
-.project-stickers h3 {
-  padding-left: 12px;
-}
-
-.project-comics h3 {
-  padding-left: 12px;
-}
 
 
 /* 8. ПЛАНШЕТЫ */
