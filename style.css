@@ -115,7 +115,6 @@ p {
 
 .project-small {
   flex: 0 0 calc((100% - 48px) / 3);
-  min-width: 0;
 }
 
 .project-small img {
@@ -230,7 +229,6 @@ p {
   }
 
   .project-small h3 {
-    font-size: 22px;
     margin-top: 8px;
     padding-left: 0;
   }
