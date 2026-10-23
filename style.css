@@ -111,20 +111,15 @@ p {
 
 /* 6. ТРИ НЕБОЛЬШИХ ПРОЕКТА */
 
-.project-small {
-  flex: 0 0 calc((100% - 48px) / 3);
-}
 
-.project-small img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+/* Единое выравнивание подписей */
 
 .project-small h3 {
   font-size: 22px;
   margin: 12px 0 0;
+  padding-left: 0;
 }
+
 
 
 /* 7. ОПТИЧЕСКОЕ ВЫРАВНИВАНИЕ ПОДПИСЕЙ */
