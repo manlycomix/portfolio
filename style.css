@@ -65,7 +65,7 @@ p {
 }
 
 
-/* 4. ОБЩАЯ СЕТКА ПРОЕКТОВ */
+/* 4. СЕТКА ПРОЕКТОВ */
 
 .projects {
   display: flex;
@@ -111,45 +111,57 @@ p {
 
 /* 6. ТРИ НЕБОЛЬШИХ ПРОЕКТА */
 
-
-/* Единое выравнивание подписей */
-
-
 .project-small {
   flex: 0 0 calc((100% - 48px) / 3);
+  min-width: 0;
 }
-
 
 .project-small img {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0;
 }
-
 
 .project-small h3 {
   font-size: 22px;
   margin: 12px 0 0;
 }
-
-
 
 
 /* 7. ОПТИЧЕСКОЕ ВЫРАВНИВАНИЕ ПОДПИСЕЙ */
 
+.project-casual h3 {
+  padding-left: 16px;
+}
 
-/* Единое выравнивание подписей */
+.project-stickers h3 {
+  padding-left: 12px;
+}
 
-.project-small h3 {
-  font-size: 22px;
-  margin: 12px 0 0;
-  padding-left: 0;
+.project-comics h3 {
+  padding-left: 12px;
 }
 
 
+/* 8. КОНТАКТЫ */
 
-/* 8. ПЛАНШЕТЫ */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 120px;
+  padding: 32px 0 40px;
+  border-top: 1px solid #cccccc;
+}
+
+.footer a {
+  color: #0645ad;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+
+/* 9. ПЛАНШЕТЫ */
 
 @media (max-width: 900px) {
 
@@ -168,7 +180,7 @@ p {
 }
 
 
-/* 9. ТЕЛЕФОНЫ */
+/* 10. ТЕЛЕФОНЫ */
 
 @media (max-width: 700px) {
 
@@ -211,6 +223,7 @@ p {
 
   .project-small img {
     width: 80%;
+    height: auto;
     margin: 0;
   }
 
@@ -220,31 +233,9 @@ p {
     padding-left: 0;
   }
 
-}
-
-
-/* КОНТАКТЫ */
-
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-top: 120px;
-  padding: 32px 0 40px;
-  border-top: 1px solid #cccccc;
-}
-
-.footer a {
-  color: #0645ad;
-  text-decoration: underline;
-  font-size: 18px;
-}
-
-/* КОНТАКТЫ НА ТЕЛЕФОНЕ */
-
-@media (max-width: 700px) {
   .footer {
     margin-top: 72px;
     gap: 20px;
   }
+
 }
