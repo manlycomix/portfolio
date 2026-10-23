@@ -81,19 +81,21 @@ p {
 
 /* 5. SKYENG — ГЛАВНЫЙ ПРОЕКТ */
 
+
 .project-featured {
   flex: 0 0 100%;
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: 24px;
 }
 
 .project-featured img {
   display: block;
-  width: 60%;
+  width: 68%;
   height: auto;
   flex-shrink: 0;
 }
+
 
 .project-text {
   flex: 1;
