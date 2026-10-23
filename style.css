@@ -107,20 +107,18 @@ p {
 /* СТИКЕРЫ И КОМИКСЫ */
 
 .project-small {
-  flex: 1 1 320px;
+  flex: 0 1 400px;
 }
 
 .project-small img {
   display: block;
   width: 100%;
-  height: 300px;
-  object-fit: contain;
+  height: auto;
 }
 
 .project-small h3 {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
 }
-
 /* АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
 
 @media (max-width: 700px) {
