@@ -180,3 +180,17 @@ p {
   }
 }
 
+/* Оптическое выравнивание подписей */
+
+.project-casual h3 {
+  padding-left: 16px;
+}
+
+.project-stickers h3 {
+  padding-left: 12px;
+}
+
+.project-comics h3 {
+  padding-left: 12px;
+}
+
